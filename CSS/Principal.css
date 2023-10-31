@@ -111,3 +111,20 @@ header{
 .checklist-servicio{
     width: 45%;
 }
+
+.service{
+    margin-bottom: 20px;
+}
+
+.n-service{
+    margin-bottom: 7px;
+    color: rgb(167, 123, 66);
+}
+
+.number{
+    display: inline-block;/*podemos darle un width y un height*/
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    width: 30px;
+    height: 30px;
+    
+}
