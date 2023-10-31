@@ -336,7 +336,7 @@ footer{
     }
 
     .img-galeria1{
-        width: 45%;
+        width: 85%;
     }
 
     .cont-experts{
@@ -369,7 +369,7 @@ footer{
         width: 65vw;
     }
 
-    .hamburguer{
+    .IconoMenu{
         top: 20px;
         right: 20px;
     }
@@ -384,6 +384,10 @@ footer{
 
     .img-galeria{
         width: 95%;
+    }
+
+    .img-galeria1{
+        width: 185%;
     }
     
     .agregar-imagen{
