@@ -178,7 +178,7 @@ header{
     margin-bottom: 20px;
 }*/
 
-.imagen-light{
+.imagen-light{/*Imagen de la galeria se agranda cuando apretas ahi*/
     position: fixed;
     display: flex;
     justify-content: center;
@@ -203,7 +203,7 @@ header{
     transition: transform .3s .2s;
 }
 
-.close{
+.close{/*Simbolo de la cruz para cerrar cuando haya apretado una imagen de nuestra gelria*/
     position: absolute;
     top: 15px;
     right: 15px;
@@ -229,9 +229,14 @@ header{
     margin-bottom: 20px;
 }
 
-.imgLogos{
+.imgLogos{/*IMAGENE DE LOS LOGOS DE LAS MARCAS*/
     width: 110%;
     height: 350px;
     display: block;
-    margin-bottom: 15px;
+    margin: auto;
+}
+
+.n-experts{/*Nombres de las marcas abajo de las fotos de sus logos*/
+
+
 }
