@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;/*hacemos que le de un afecto como de deslizar cuando se produce el scroll, se nota mas en las cosas automaticas*/
+}
+
+body
+{
+    font-family: 'Open Sans', sans-serif;/*Fuentes*/
+
+}
+.contenedor{
+    width:90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;/*Para que los elementos esten espaciados*/
+}
+
+header{
+    height: 100vh;/*QUE OCUPE EL 100%*/
+    background-image: linear-gradient(to right, rgba(255, 236, 210, 0.35) 0%, #fcb69f8b 100%), url(../img/MuchosAutos.jpg);/*le ponemos la imagen del fondo y agregamos un color con transparencia para que quede mas lindo*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.head{ /*Modificamos las cosas con clase head*/
+    padding: 0px;/*usamos padding de 0 porque el head es clase contenedor y contenedor tiene padding de 60*/
+    height: 100%;
+    display: flex;
+    justify-content: center;/*hacemos que las cosas queden alineadas en el centro vertical*/
+    align-items: center;/*hacemos que las cosas queden alineadas en el centro horizontal*/
+    flex-direction: column;
+    color: rgb(34, 32, 31);
+}
+
+.IconoMenu
+{  
+    position: fixed;/*que se quede fijo*/
+    top: 30px;
+    right: 30px;
+    background: aliceblue;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;/*que aparezca la manito*/
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.menu-navegacion
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw; /*30% del ancho de la pagina*/
+    height: 100%;
+    background-image: linear-gradient(135deg, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;/*hace que quede repartido todo en vertical con el mismo espacio entre cada uno de los titulos*/
+    align-items: center;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.spread{
+    transform: translate(0);
+}
+
+.menu-navegacion a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.titulo{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.copy{
+    font-weight: 300;
+    font-size: 25px;
+}
+
+/*Parte de servicios*/
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: rgb(167, 123, 66);
+    margin-bottom: 40px;
+    font-size: 40px; 
+}
+
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;/*cuando algo no entra se va para abajo*/
+}
+
+.contenedor-servicio img{
+    width: 40%;
+}
+
+.checklist-servicio{
+    width: 45%;
+}
