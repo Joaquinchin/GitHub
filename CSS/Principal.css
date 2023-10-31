@@ -31,6 +31,7 @@ header{
 }
 
 .head{ /*Modificamos las cosas con clase head*/
+    text-align: center;
     padding: 0px;/*usamos padding de 0 porque el head es clase contenedor y contenedor tiene padding de 60*/
     height: 100%;
     display: flex;
@@ -84,7 +85,6 @@ header{
 }
 
 .copy{
-    font-weight: 300;
     font-size: 25px;
 }
 
@@ -110,4 +110,303 @@ header{
 
 .checklist-servicio{
     width: 45%;
+}
+
+.service{
+    margin-bottom: 20px;
+}
+
+.n-service{
+    margin-bottom: 7px;
+    color: rgb(167, 123, 66);
+}
+
+.number{
+    display: inline-block;/*podemos darle un width y un height*/
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;/*se hace que el color que rodea se hace redondo*/
+    font-weight: 500;
+    margin-right: 7px;
+}
+
+.gallery
+{
+    background: #ffecd2;
+}
+
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria{
+    object-fit: cover;
+    width: 35%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.img-galeria1{
+    width: 35%;
+    height: 450px;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+/*.ModelosBMW{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ModelosLambo{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ModelosMerchos{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}*/
+
+.imagen-light{/*Imagen de la galeria se agranda cuando apretas ahi*/
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.show{
+    transform: translate(0);
+}
+
+.agregar-imagen{
+    object-fit: cover;
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+
+.close{/*Simbolo de la cruz para cerrar cuando haya apretado una imagen de nuestra gelria*/
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+.experts{
+    display: flex;
+    justify-content: space-between;
+    align-items:first baseline;
+    flex-wrap: wrap;
+}
+
+.cont-experts{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.imgLogos{/*IMAGENE DE LOS LOGOS DE LAS MARCAS*/
+    width: 110%;
+    height: 350px;
+    display: block;
+    margin: auto;
+}
+
+.n-experts{/*Nombres de las marcas abajo de las fotos de sus logos*/
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400;
+}
+
+/*Footer*/
+
+footer{
+    background: #6a4441;
+    padding-bottom: 0.1px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;/*Para que las cosas se pongan al lado de la otra pero en las esquinas*/
+    align-items: center;/*centrados verticalmente*/
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.contact-us{
+    width: 40%;
+    color:#fff;
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.brand+p{/*esta funcion la usamos para marcar lo siguiente en este caso a brand que es un parrafo*/
+    font-weight: 500;
+}
+
+.social-media{
+    width: 150%;
+    display: flex;
+    justify-content: flex-end;/*Se pone al final del contenedor*/
+}
+
+.social-media-icon{/*Ponemos los iconos de nuestras redes*/
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff; 
+}
+
+.social-media-icon:hover{/*Efectos con el mouse*/
+    background: #fff;
+    color:#f99185;
+}
+
+.social-media-icon i{/*Los centramos*/
+    font-size: 30px;
+    line-height: 60px;
+
+}
+
+/*HACEMOS EL RESPONSIVE PARA QUE SE ADAPTE A LOS DISTINTOS DISPOSITIVOS*/
+
+@media  screen and (max-width: 800px) {
+    .menu-navegacion{
+        width: 50vw;
+    }
+    .titulo{
+        font-size: 40px;
+
+    }
+
+    .contenedor-servicio img{
+        width: 80%;
+        margin-bottom: 40px;
+
+    }
+    .checklist-servicio{
+        width: 80%;
+    }
+    .service{
+        margin-bottom: 30px;
+    }
+
+    .agregar-imagen{
+        width: 80%;
+    }
+
+    .img-galeria{
+        width: 45%;
+    }
+
+    .img-galeria1{
+        width: 85%;
+    }
+
+    .cont-experts{
+        width: 80%;
+    }
+
+    .footer-content{
+        justify-content: center;
+    }
+
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .social-media i{
+        margin-left: 0; 
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+
+    }
+}
+
+@media screen and (max-width: 500px){
+    .menu-navegacion{
+        width: 65vw;
+    }
+
+    .IconoMenu{
+        top: 20px;
+        right: 20px;
+    }
+
+    .titulo{
+        font-size: 30px;
+    }
+
+    .subtitulo{
+        font-size: 30px;
+    }
+
+    .img-galeria{
+        width: 95%;
+    }
+
+    .img-galeria1{
+        width: 185%;
+    }
+    
+    .agregar-imagen{
+        width: 90%;
+    }
+
+    .social-media{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 95%;
+        margin-bottom: 40px;
+    }
+    
 }
