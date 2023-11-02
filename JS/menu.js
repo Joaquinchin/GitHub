@@ -19,7 +19,7 @@ window.addEventListener('click', e=>{/*Le asignamos e al click*/
         entonces se cierra*/
      }
 })
-
+//Funciones para rediccionar a otras paginas
 function redireccionar() {
     window.open ('https://www.mercedes-benz.com.ar/passengercars.html?group=all&subgroup=see-all&view=BODYTYPE, _blank'); //Se nos abre en una pgina en blanco
 

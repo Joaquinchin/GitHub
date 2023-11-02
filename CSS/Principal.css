@@ -300,6 +300,12 @@ footer{
 
 }
 
+.img-redesSociales{
+    width: 100%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+
 /*HACEMOS EL RESPONSIVE PARA QUE SE ADAPTE A LOS DISTINTOS DISPOSITIVOS*/
 
 @media  screen and (max-width: 800px) {
