@@ -21,6 +21,10 @@ window.addEventListener('click', e=>{/*Le asignamos e al click*/
 })
 
 function redireccionar() {
-    window.open ('https://www.mercedes-benz.com.ar/passengercars.html?group=all&subgroup=see-all&view=BODYTYPE, _blank'); // Reemplaza 'https://tupagina.com' con la URL a la que deseas redirigir.
+    window.open ('https://www.mercedes-benz.com.ar/passengercars.html?group=all&subgroup=see-all&view=BODYTYPE, _blank'); //Se nos abre en una pgina en blanco
+
   }
   
+  function redireccionar(url) {
+    window.open(url, '_blank');
+}
