@@ -1,8 +1,7 @@
 const Menu = document.querySelector('.IconoMenu')
 const MenuNav = document.querySelector('.menu-navegacion')
+const closeMenu = document.querySelector('.close');
 
-console.log(Menu)
-console.log(MenuNav)
 
 Menu.addEventListener('click', ()=>{/*Funcion de flecha*/
     MenuNav.classList.toggle("spread")/*Lo que hace esta funcion es que le agrega es clase a la otra clase, en este caso a la 
