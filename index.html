@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página web</title>
     <link rel="stylesheet" href="CSS/Principal.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"><!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Google fonts-->
     <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'><!--boxicons-->
     <script>
-         function BmwMoto()
-        {
-            window.location.href = "BmwMoto.html";
+        function BmwMoto() {
+            var url = "BmwMoto.html"; 
+            window.open(url, "_blank");
         }
-        function BmwX6()
-        {
-            window.location.href = "BmwX6.html";
+        function BmwX6() {
+            var url = "BmwX6.html"; 
+            window.open(url, "_blank");
         }
-        function FerrariPortofino()
-        {
-            window.location.href = "FerrariPortofina.html";
+        function FerrariPortofino() {
+            var url = "FerrariPortofino.html"; 
+            window.open(url, "_blank");
         }
-        function FerrariCalifornia()
-        {
-            window.location.href = "FerrariCalifornia.html";
+        function FerrariCalifornia() {
+            var url = "FerrariCalifornia.html"; 
+            window.open(url, "_blank");
         }
-        function Mercedes()
-        {
-            window.location.href = "Mercedes.html";
+        function Mercedes() {
+            var url = "Mercedes.html"; 
+            window.open(url, "_blank");
         }
-        function Gwagon()
-        {
-            window.location.href = "g-wagon.html";
+        function Gwagon() {
+            var url = "g-wagon.html"; 
+            window.open(url, "_blank");
         }
     </script>
 </head>
+
 <body>
-    
+
     <header class="header" id="inicio"><!--Inicializamos el titulo-->
         <img class="IconoMenu" src="img/IconMenu.svg" alt=""><!--Icono de menu -->
-        <nav class="menu-navegacion"><!--Cree el manu de navegacion donde vamos a poder ir accediendo a los distintos subtitilos de la pagina-->
-                <a href="#inicio">Inicio</a>
-                <a href="#servicio">Servicio</a>
-                <a href="#galeria">Ofertas</a>
-                <a href="#expertos">Especializados</a>
-                <a href="#footer">Contacto</a>
+        <nav class="menu-navegacion">
+            <!--Cree el manu de navegacion donde vamos a poder ir accediendo a los distintos subtitilos de la pagina-->
+            <a href="#inicio">Inicio</a>
+            <a href="#servicio">Servicio</a>
+            <a href="#galeria">Ofertas</a>
+            <a href="#expertos">Especializados</a>
+            <a href="#footer">Contacto</a>
         </nav>
         <div class="contenedor head">
             <h1 class="titulo">ToTonCars</h1><!--Titulo Principal-->
             <p class="copy">Encontra el auto de tus sueños.</p><!--Breve descripcion que tenemos que cambiar-->
         </div>
-        
+
     </header>
     <main>
         <section class="contenedor" id="servicio"><!--Seccion del main que usamos para mostrar nuestros servicios-->
@@ -59,11 +63,13 @@
                 <div class="checklist-servicio">
                     <div class="service">
                         <h3 class="n-service"><span class="number">1</span>Experiencia Unica</h3>
-                        <p> El perosnal siempre estara dispuesto a escuhar y atender tus necesidades, buscando tu satisfaccion no solo con el vehículo, sino que te sientas parte de esta gran familia.</p>
+                        <p> El perosnal siempre estara dispuesto a escuhar y atender tus necesidades, buscando tu
+                            satisfaccion no solo con el vehículo, sino que te sientas parte de esta gran familia.</p>
                     </div>
                     <div class="service">
                         <h3 class="n-service"><span class="number">2</span>Services</h3>
-                        <p>Nos encargamos de los chequeos rutinarios del vehículo dejandolo en las manos de los mejores mecanicos especializados en nuestras marcas principales.</p>
+                        <p>Nos encargamos de los chequeos rutinarios del vehículo dejandolo en las manos de los mejores
+                            mecanicos especializados en nuestras marcas principales.</p>
                     </div>
                     <div class="service">
                         <h3 class="n-service"><span class="number">3</span>Plan Renovar</h3>
@@ -72,60 +78,62 @@
                 </div>
             </div>
         </section>
-        <section class="gallery" id="galeria"><!--Seccion del main que usamos para mostrar nuestra galeria con las principales ofertas-->
+        <section class="gallery" id="galeria">
+            <!--Seccion del main que usamos para mostrar nuestra galeria con las principales ofertas-->
             <div class="contenedor">
                 <h2 class="subtitulo">Ultimos Ingresos</h2>
                 <div class="contenedor-galeria">
-                        <img src="img/MotoBMW.jpeg" alt="" class="img-galeria1">
-                 </div>
-                 <div class="pie" onclick="BmwMoto()">
+                    <img src="img/MotoBMW.jpeg" alt="" class="img-galeria1">
+                </div>
+                <div class="pie" onclick="BmwMoto()">
                     <p>BMW M1000</p>
-                 </div>
-                 <div class="contenedor-galeria">
+                </div>
+                <div class="contenedor-galeria">
                     <img src="img/BMWX6.jpg" alt="" class="img-galeria1">
                 </div>
                 <div class="pie" onclick="BmwX6()">
-                   <p>BMW X6</p>
+                    <p>BMW X6</p>
                 </div>
                 <div class="contenedor-galeria">
                     <img src="img/FerrariPortofino.jpg" alt="" class="img-galeria">
                 </div>
                 <div class="pie" onclick="FerrariPortofino()">
-                   <p>Ferrari Portofino</p>
+                    <p>Ferrari Portofino</p>
                 </div>
-                <div class="contenedor-galeria">   
-                    <img src="img//FerrariCalifornia.jpg" alt="" class="img-galeria">  
+                <div class="contenedor-galeria">
+                    <img src="img//FerrariCalifornia.jpg" alt="" class="img-galeria">
                 </div>
                 <div class="pie" onclick="FerrariCalifornia()">
-                   <p>Ferrari California</p>
+                    <p>Ferrari California</p>
                 </div>
-                <div class="contenedor-galeria">            
-                    <img src="img/AmgGT.jpg" alt="" class="img-galeria">    
+                <div class="contenedor-galeria">
+                    <img src="img/AmgGT.jpg" alt="" class="img-galeria">
                 </div>
                 <div class="pie" onclick="Mercedes()">
-                   <p>Mercedes AMG GT</p>
+                    <p>Mercedes AMG GT</p>
                 </div>
-                <div class="contenedor-galeria">  
-                    <img src="img/GwagonBlanca.jpg" alt="" class="img-galeria">    
+                <div class="contenedor-galeria">
+                    <img src="img/GwagonBlanca.jpg" alt="" class="img-galeria">
                 </div>
                 <div class="pie" onclick="Gwagon()">
                     <p>G-Wagon</p>
                 </div>
             </div>
         </section>
-     <section class="imagen-light">
+        <section class="imagen-light">
             <img src="img/close.svg" alt="" class="close">
             <img src="img/clio.jpg" alt="" class="agregar-imagen">
         </section>
-        <section class="contenedor" id="expertos"><!--Seccion del main que usamos para mostrar nuestra principales marcas-->
+        <section class="contenedor" id="expertos">
+            <!--Seccion del main que usamos para mostrar nuestra principales marcas-->
             <h2 class="subtitulo">Especializados en:</h2>
             <section class="experts">
                 <div class="cont-experts">
-                    <img src="img/LogoBMW.jpg" alt=""class="imgLogos">
+                    <img src="img/LogoBMW.jpg" alt="" class="imgLogos">
                     <h3 class="n-experts">BMW</h3>
                 </div>
                 <div class="cont-experts">
-                    <img src="img/LogoMercedes.jpg" alt=""class="imgLogos">
+                    <img src="img/LogoMercedes.jpg" alt="" class="imgLogos">
                     <h3 class="n-experts">Mercedes</h3>
                 </div>
                 <div class="cont-experts">
@@ -143,13 +151,13 @@
             </div>
             <div class="social-media"><!--Mostramos los simbolitos de nuestras redes sociales-->
                 <a href="#" class="social-media-icon" onclick="redireccionar()">
-                    <i class='bx bxl-whatsapp'></i> 
+                    <i class='bx bxl-whatsapp'></i>
                 </a>
                 <a href="#" class="social-media-icon" onclick="redireccionar()">
-                    <i class='bx bxl-facebook-circle' ></i>
+                    <i class='bx bxl-facebook-circle'></i>
                 </a>
                 <a href="#" class="social-media-icon" onclick="redireccionar()">
-                    <i class='bx bxl-instagram' ></i> 
+                    <i class='bx bxl-instagram'></i>
                 </a>
             </div>
         </div>
@@ -157,4 +165,5 @@
     <script src="JS/menu.js"></script>
     <script src="JS/lightbox.js"></script>
 </body>
+
 </html>
