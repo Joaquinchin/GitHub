@@ -9,44 +9,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <!--Google fonts-->
     <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'><!--boxicons-->
-    <script>
-        function BmwMoto() {
-            var url = "BmwMoto.html"; 
-            window.open(url, "_blank");
-        }
-        function BmwX6() {
-            var url = "BmwX6.html"; 
-            window.open(url, "_blank");
-        }
-        function FerrariPortofino() {
-            var url = "FerrariPortofino.html"; 
-            window.open(url, "_blank");
-        }
-        function FerrariCalifornia() {
-            var url = "FerrariCalifornia.html"; 
-            window.open(url, "_blank");
-        }
-        function Mercedes() {
-            var url = "Mercedes.html"; 
-            window.open(url, "_blank");
-        }
-        function Gwagon() {
-            var url = "g-wagon.html"; 
-            window.open(url, "_blank");
-        }
-    </script>
 </head>
 
 <body>
-
-    <header class="header" id="inicio"><!--Inicializamos el titulo-->
+    
+    <header class="header" id="inicio"><!--Definimos que el header sea nuestro inico-->
         <img class="IconoMenu" src="img/IconMenu.svg" alt=""><!--Icono de menu -->
         <nav class="menu-navegacion"><!--Cree el manu de navegacion donde vamos a poder ir accediendo a los distintos subtitilos de la pagina-->
             <img src="img/close.svg" alt="" class="close">
+                <a href="LogIN.html" target="_blank">Log In</a>
                 <a href="#inicio">Inicio</a>
                 <a href="#servicio">Servicios</a>
                 <a href="#galeria">Últimos modelos</a>
                 <a href="#expertos">Nuestras Marcas</a>
+                <a href="#footer">Contacto</a>
+
         </nav>
         <div class="contenedor head">
             <h1 class="titulo">ToTonCars</h1><!--Titulo Principal-->
@@ -82,12 +59,13 @@
             <div class="contenedor">
                 <h2 class="subtitulo">Ultimos Ingresos</h2>
                 <div class="contenedor-galeria">
-                    <img src="img/MotoBMW.jpeg" alt="" class="img-galeria1">
-                </div>
-                <div class="pie" onclick="BmwMoto()">
+                        <img src="img/MotoBMW.jpeg" alt="" class="img-galeria1">
+                 </div>
+                 <div class="pie" onclick="redireccionar('INSTA.html')">
                     <p>BMW M1000</p>
                 </div>
-                <div class="contenedor-galeria">
+                 <div class="contenedor-galeria">
+
                     <img src="img/BMWX6.jpg" alt="" class="img-galeria1">
                 </div>
                 <div class="pie" onclick="BmwX6()">
