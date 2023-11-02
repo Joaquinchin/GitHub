@@ -1,22 +1,32 @@
-const imagenes = [...document.querySelectorAll('.img-galeria')];/*Usamos el spread operator xa convertirlo a arrays xq nose xq no lo tomaba como constante sino*/
+const imagenes = [...document.querySelectorAll('.img-galeria')];
 const imagenes1 = [...document.querySelectorAll('.img-galeria1')];
-const imagenesLight = [...document.querySelectorAll('.agregar-imagen')];
-const imagenesLight2 = [...document.querySelectorAll('.imagen-light')];
+const imagenesLight = document.querySelector('.agregar-imagen'); // Selecciona el elemento individual
+const contenedorLight = document.querySelector('.imagen-light'); // Selecciona el elemento individual
+const closeLight = document.querySelector('.close');
 
+imagenes.forEach(imagen => {
+    imagen.addEventListener('click', () => {
+        aparecerImagen(imagen.getAttribute('src'));
+    });
+});
 
-imagenes.forEach(imagen =>{
-    imagen.addEventListener('click', ()=> {
-        /*alert("ola linda")*/
-        aparecerImagen(imagen.getAttribute('src'))
-    })
-})
-imagenes1.forEach(imagen =>{
-    imagen.addEventListener('click', ()=> {
-        alert("Uribe la concha de tu madre")
-    })
-})
+imagenes1.forEach(imagen => {
+    imagen.addEventListener('click', () => {
+        aparecerImagen(imagen.getAttribute('src'));
+    });
+});
 
-const aparecerImagen = (imagen)=>{
-    imagenesLight.src= imagen;
+contenedorLight.addEventListener('click', (e) => {
+    if (e.target !== contenedorLight) { // Verifica si el clic ocurrió en el contenedorLight
+        contenedorLight.classList.toggle('show');
+        imagenesLight.classList.toggle('showImage');
+        Menu.style.opacity = '1';
+    }
+});
 
-}
+const aparecerImagen = (imagen) => {
+    imagenesLight.src = imagen;
+    contenedorLight.classList.toggle('show');
+    imagenesLight.classList.toggle('showImage');
+    Menu.style.opacity = '0';
+};
