@@ -140,18 +140,23 @@ header{
 
 .contenedor-galeria{
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+   
 }
 
 .img-galeria{
-    object-fit: cover;
     width: 35%;
+    height: 500px;
     display: block;
     margin-bottom: 15px;
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
     cursor: pointer;
 }
+/* width: 110%;
+    height: 350px;
+    display: block;
+    margin: auto;*/
 
 .img-galeria1{
     width: 35%;
@@ -163,9 +168,11 @@ header{
 }
 
 div.pie{
+    
     text-align: center;
     padding: 10px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .imagen-light{/*Imagen de la galeria se agranda cuando apretas ahi*/
