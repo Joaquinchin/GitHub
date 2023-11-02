@@ -30,3 +30,5 @@ const aparecerImagen = (imagen) => {
     imagenesLight.classList.toggle('showImage');
     Menu.style.opacity = '0';
 };
+
+
