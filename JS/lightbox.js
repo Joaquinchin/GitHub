@@ -1,5 +1,5 @@
 const imagenes = [...document.querySelectorAll('.img-galeria')];
-const imagenes1 = [...document.querySelectorAll('.img-galeria1')];
+const imagenes1 = [ ...document.querySelectorAll('.img-galeria1')];
 const imagenesLight = document.querySelector('.agregar-imagen'); // Selecciona el elemento individual
 const contenedorLight = document.querySelector('.imagen-light'); // Selecciona el elemento individual
 const closeLight = document.querySelector('.close');
