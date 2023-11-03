@@ -4,50 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página web</title>
+    <title>ToTonCars</title>
     <link rel="stylesheet" href="CSS/Principal.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <!--Google fonts-->
     <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'><!--boxicons-->
-    <script>
-        function BmwMoto() {
-            var url = "BmwMoto.html"; 
-            window.open(url, "_blank");
-        }
-        function BmwX6() {
-            var url = "BmwX6.html"; 
-            window.open(url, "_blank");
-        }
-        function FerrariPortofino() {
-            var url = "FerrariPortofino.html"; 
-            window.open(url, "_blank");
-        }
-        function FerrariCalifornia() {
-            var url = "FerrariCalifornia.html"; 
-            window.open(url, "_blank");
-        }
-        function Mercedes() {
-            var url = "Mercedes.html"; 
-            window.open(url, "_blank");
-        }
-        function Gwagon() {
-            var url = "g-wagon.html"; 
-            window.open(url, "_blank");
-        }
-    </script>
 </head>
 
 <body>
+    <header class="header" id="inicio"><!--Definimos que el header sea nuestro inico-->
 
-    <header class="header" id="inicio"><!--Inicializamos el titulo-->
         <img class="IconoMenu" src="img/IconMenu.svg" alt=""><!--Icono de menu -->
         <nav class="menu-navegacion">
             <!--Cree el manu de navegacion donde vamos a poder ir accediendo a los distintos subtitilos de la pagina-->
-            <a href="#inicio">Inicio</a>
-            <a href="#servicio">Servicio</a>
-            <a href="#galeria">Ofertas</a>
-            <a href="#expertos">Especializados</a>
-            <a href="#footer">Contacto</a>
+            <img src="img/close.svg" alt="" class="close">
+                <a href="LogIN.html" target="_blank">Log In</a>
+                <a href="#inicio">Inicio</a>
+                <a href="#servicio">Servicios</a>
+                <a href="#galeria">Últimos modelos</a>
+                <a href="#expertos">Nuestras Marcas</a>
+                <a href="#Ofertas">OFERTAS</a>
+                <a href="#footer">Contacto</a>
         </nav>
         <div class="contenedor head">
             <h1 class="titulo">ToTonCars</h1><!--Titulo Principal-->
@@ -83,39 +60,39 @@
             <div class="contenedor">
                 <h2 class="subtitulo">Ultimos Ingresos</h2>
                 <div class="contenedor-galeria">
-                    <img src="img/MotoBMW.jpeg" alt="" class="img-galeria1">
-                </div>
-                <div class="pie" onclick="BmwMoto()">
+                        <img src="img/MotoBMW.jpeg" alt="" class="img-galeria1">
+                 </div>
+                 <div class="pie" onclick="redireccionar('BmwMoto.html')">
                     <p>BMW M1000</p>
                 </div>
-                <div class="contenedor-galeria">
+                 <div class="contenedor-galeria">
                     <img src="img/BMWX6.jpg" alt="" class="img-galeria1">
                 </div>
-                <div class="pie" onclick="BmwX6()">
+                <div class="pie" onclick="redireccionar('BmwX6.html')">
                     <p>BMW X6</p>
                 </div>
                 <div class="contenedor-galeria">
                     <img src="img/FerrariPortofino.jpg" alt="" class="img-galeria">
                 </div>
-                <div class="pie" onclick="FerrariPortofino()">
+                <div class="pie" onclick="redireccionar('FerrariPortofino.html')">
                     <p>Ferrari Portofino</p>
                 </div>
                 <div class="contenedor-galeria">
                     <img src="img//FerrariCalifornia.jpg" alt="" class="img-galeria">
                 </div>
-                <div class="pie" onclick="FerrariCalifornia()">
+                <div class="pie" onclick="redireccionar('FerrariCalifornia.html')">
                     <p>Ferrari California</p>
                 </div>
                 <div class="contenedor-galeria">
                     <img src="img/AmgGT.jpg" alt="" class="img-galeria">
                 </div>
-                <div class="pie" onclick="Mercedes()">
+                <div class="pie" onclick="redireccionar('Mercedes.html')">
                     <p>Mercedes AMG GT</p>
                 </div>
                 <div class="contenedor-galeria">
                     <img src="img/GwagonBlanca.jpg" alt="" class="img-galeria">
                 </div>
-                <div class="pie" onclick="Gwagon()">
+                <div class="pie" onclick="redireccionar('g-wagon.html')">
                     <p>G-Wagon</p>
                 </div>
             </div>
@@ -123,6 +100,78 @@
         <section class="imagen-light">
             <img src="img/close.svg" alt="" class="close">
             <img src="img/clio.jpg" alt="" class="agregar-imagen">
+        </section>
+        <section class="gallery" id="Ofertas">
+            <div class="contenedor">
+                <p>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+                <h2 class="subtitulo">Ofertas</h2>
+                <div class="galeria-ofertas">
+                    <div class="fotos">
+                        <img src="img/clio.jpg" alt="">
+                    </div>
+                    <div class="pie-ofertas">
+                        <p>RENAULT Clio 2018</p>
+                        <p class="subtitilo">USD:$ 5.000</p>
+                        <p>Muy buen cuidado, ha recorrido alrededor de 50,000 kilómetros. Perfecto para la conducción en la ciudad. El motor funciona sin problemas y ha sido sometido a un mantenimiento regular. Tiene algunos pequeños rayones en el baúl, que son el resultado de su uso diario. Son superficiales y no afectan el rendimiento del automóvil en absoluto.</p>
+                    </div>
+                </div>
+        
+                <div class="galeria-ofertas">
+                    <div class="fotos">
+                        <img src="img/camaro.jpg" alt="">
+                    </div>
+                    <div class="pie-ofertas">
+                        <p>CHEVROLET Camaro 2015</p>
+                        <p class="subtitilo">USD:$ 20.000</p>
+                        <p>Un automóvil en excelentes condiciones con solo 40,000 km en el odómetro. Este vehículo ha sido muy bien cuidado y nunca ha tenido problemas. Es un coche deportivo emocionante y confiable. Si buscas un Camaro con bajo kilometraje y un historial impecable, esta es tu gran oportunidad.</p>
+                    </div>
+                </div>
+        
+                <div class="galeria-ofertas">
+                    <div class="fotos">
+                        <img src="img/FiatPalio.webp" alt="">
+                    </div>
+                    <div class="pie-ofertas">
+                        <p>FIAT Palio 2016</p>
+                        <p class="subtitilo">USD:$ 3.000</p>
+                        <p>Un automóvil que ha sido utilizado principalmente por una madre ama de casa. A pesar de tener varios kilómetros en el odómetro, se ha mantenido en buenas condiciones y ha sido confiable para nuestro uso familiar. Si buscas un vehículo práctico y espacioso con un historial de cuidado, este Palio es una excelente opción.</p>
+                    </div>
+                </div>
+
+                <div class="galeria-ofertas">
+                    <div class="fotos">
+                        <img src="img/bmw-m3.jpg" alt="">
+                    </div>
+                    <div class="pie-ofertas">
+                        <p>BMW M3 2005</p>
+                        <p class="subtitilo">USD:$ 12.000</p>
+                        <p> Cuidado por un conductor experimentado. A pesar de su edad, ha sido mantenido en excelente estado y ha sido objeto de algunas mejoras y reparaciones recientes, como la instalación de repuestos nuevos para mantener su alto rendimiento. Si buscas un M3 con un toque adicional de potencia y cuidado meticuloso, esta es una oportunidad única.</p>
+                        </div>
+                </div>
+
+                <div class="galeria-ofertas">
+                    <div class="fotos">
+                        <img src="img/corsa-classic-ajpg.jpg" alt="">
+                    </div>
+                    <div class="pie-ofertas">
+                        <p> CHEVROLET Corsa 2010</p>
+                        <p class="subtitilo">USD:$ 2.000</p>
+                        <P>Atomóvil que ha demostrado ser uno de los mejores del mercado. A pesar de los años y los kilómetros, este Corsa Classic es un vehículo que nunca te deja tirado. Ha sido mantenido adecuadamente y ha superado las expectativas en términos de confiabilidad.</P>
+                        </div>
+                </div>
+        
+        
+                <div class="galeria-ofertas">
+                    <div class="fotos">
+                        <img src="img/BmwX1.jpg" alt="">
+                    </div>
+                    <div class="pie-ofertas">
+                        <p>BMW X1 2012</p>
+                        <p class="subtitilo">USD:$ 14.000</p>
+                        <p>Un vehículo con algunos kilómetros adicionales en el odómetro, pero que ha sido bien mantenido. Recientemente se le realizó una importante reparación en el motor, lo que significa que ahora está en óptimas condiciones de funcionamiento. Además, se le han instalado repuestos nuevos para garantizar su rendimiento a largo plazo.</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="contenedor" id="expertos">
             <!--Seccion del main que usamos para mostrar nuestra principales marcas-->
@@ -148,15 +197,17 @@
             <div class="contact-us">
                 <h2 class="brand">TotonCars</h2>
                 <p>Expertos en el auto de tus sueños</p>
+                <p>TELEFONO: +31 09122018 </p>
+                <P>Direccion: Santiago Bernabeu 31</P>
             </div>
             <div class="social-media"><!--Mostramos los simbolitos de nuestras redes sociales-->
-                <a href="#" class="social-media-icon" onclick="redireccionar()">
-                    <i class='bx bxl-whatsapp'></i>
+                <a href="TW.HTML" class="social-media-icon" target="_blank">
+                    <i class='bx bxl-twitter'></i>
                 </a>
-                <a href="#" class="social-media-icon" onclick="redireccionar()">
+                <a href="FACE.html" class="social-media-icon" target="_blank">
                     <i class='bx bxl-facebook-circle'></i>
                 </a>
-                <a href="#" class="social-media-icon" onclick="redireccionar()">
+                <a href="INSTA.html" class="social-media-icon" target="_blank">
                     <i class='bx bxl-instagram'></i>
                 </a>
             </div>

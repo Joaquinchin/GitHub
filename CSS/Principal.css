@@ -168,7 +168,6 @@ header{
 }
 
 div.pie{
-    
     text-align: center;
     padding: 10px;
     margin-bottom: 10px;
@@ -241,6 +240,32 @@ div.pie{
     width: 100%;
     font-weight: 400;
 }
+/*Galeria ofertas*/
+div.galeria-ofertas{
+    margin: 10px 20px;
+    box-shadow: o 4px 8px 0 #543937, 0 6px 20px 0 rgba(0,0,0,0.19);
+    float: left;
+    width: 350px;
+
+}
+
+div.galeria-ofertas img{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+
+}
+
+div.galeria-ofertas:hover{
+    border: 1px solid #f99185;
+    transform: rotate(-3deg);
+}
+
+div.pie-ofertas{
+
+    text-align: center;
+    padding: 10px;
+}
 
 /*Footer*/
 
@@ -303,6 +328,28 @@ footer{
 .img-redesSociales{
     width: 100%;
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+.img-LogINfondo{
+    height: 100vh;/*QUE OCUPE EL 100%*/
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(255, 236, 210, 0.35) 0%, #fcb69f8b 100%), url(../img/FondoLogIn.jpg);/*le ponemos la imagen del fondo y agregamos un color con transparencia para que quede mas lindo*/
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.tituloLogIn{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+.headLogIn{ /*Modificamos las cosas con clase head*/
+    text-align: center;
+    padding: 0;/*usamos padding de 0 porque el head es clase contenedor y contenedor tiene padding de 60*/
+    height: 100%;
+    display: flex;
+    align-items: center;/*hacemos que las cosas queden alineadas en el centro horizontal*/
+    flex-direction: column;
+    color: rgb(34, 32, 31);
 }
 
 
