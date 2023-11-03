@@ -3,13 +3,20 @@
     margin: 0;
     padding: 0;
 }
-body
-{
+
+body {
     font-family: 'Raleway', sans-serif;
 }
 
+
 h1 {
     font-weight: 400;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 40px;
+}
+
+h2 {
     text-align: center;
     padding: 20px 0px;
     font-size: 40px;
@@ -24,12 +31,19 @@ h1 {
 
 .galeria {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     width: 95%;
     margin: auto;
-    grid-gap: 10px; 
+    grid-gap: 10px;
     padding: 40px 0px;
     overflow: hidden;
+}
+
+.galeria>a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px red;
 }
 
 .galeria img {
@@ -40,14 +54,7 @@ h1 {
     transition: transform 0.5s;
 }
 
-.galeria > a {
- display: block;
- position: relative;
- overflow: hidden;
- box-shadow: 0 0 6px red;
-}
-
-.galeria a:hover img{
+.galeria a:hover img {
     transform: rotate(10deg) scale(1.5);
 }
 
@@ -67,8 +74,8 @@ h1 {
 }
 
 .caja img {
-    width: 60vw;
-    max-height: 70vh;
+    width: 75vw;
+    max-height: 80vh;
 }
 
 .caja:target {
@@ -80,11 +87,118 @@ h1 {
     position: absolute;
     top: 40px;
     right: 40px;
-    background: red;
+    background: white;
+    color: white;
     text-decoration: none;
     width: 40px;
     height: 40px;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
+}
+
+.next {
+    display: block;
+    background: red;
+    color: white;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.descripcion {
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+footer {
+    background: #6a4441;
+    padding-bottom: 0.1px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    /*Para que las cosas se pongan al lado de la otra pero en las esquinas*/
+    align-items: center;
+    /*centrados verticalmente*/
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.contact-us {
+    width: 40%;
+    color: #fff;
+}
+
+.brand {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.brand+p {
+    /*esta funcion la usamos para marcar lo siguiente en este caso a brand que es un parrafo*/
+    font-weight: 500;
+}
+
+.social-media {
+    width: 150%;
+    display: flex;
+    justify-content: flex-end;
+    /*Se pone al final del contenedor*/
+}
+
+.social-media-icon {
+    /*Ponemos los iconos de nuestras redes*/
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icon:hover {
+    /*Efectos con el mouse*/
+    background: #fff;
+    color: #f99185;
+}
+
+.social-media-icon i {
+    /*Los centramos*/
+    font-size: 30px;
+    line-height: 60px;
+
+}
+
+.img-redesSociales {
+    width: 100%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.footer-content{
+    justify-content: center;
+}
+
+.social-media{
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+.social-media i{
+    margin-left: 0; 
+}
+
+.contact-us{
+    text-align: center;
+    width: 80%;
+    margin-bottom: 40px;
+
 }
