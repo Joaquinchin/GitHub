@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página web</title>
     <link rel="stylesheet" href="CSS/Principal.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"><!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Google fonts-->
     <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'><!--boxicons-->
 </head>
+
 <body>
-    
+
     <header class="header" id="inicio"><!--Inicializamos el titulo-->
         <img class="IconoMenu" src="img/IconMenu.svg" alt=""><!--Icono de menu -->
-        <nav class="menu-navegacion"><!--Cree el manu de navegacion donde vamos a poder ir accediendo a los distintos subtitilos de la pagina-->
+        <nav class="menu-navegacion">
+            <!--Cree el manu de navegacion donde vamos a poder ir accediendo a los distintos subtitilos de la pagina-->
             <img src="img/close.svg" alt="" class="close">
-                <a href="#inicio">Inicio</a>
-                <a href="#servicio">Servicios</a>
-                <a href="#galeria">Últimos modelos</a>
-                <a href="#expertos">Nuestras Marcas</a>
-                <a href="#footer">Contacto</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicio">Servicios</a>
+            <a href="#galeria">Últimos modelos</a>
+            <a href="#expertos">Nuestras Marcas</a>
+            <a href="#footer">Contacto</a>
         </nav>
         <div class="contenedor head">
             <h1 class="titulo">ToTonCars</h1><!--Titulo Principal-->
             <p class="copy">Encontra el auto de tus sueños.</p><!--Breve descripcion que tenemos que cambiar-->
         </div>
-        
+
     </header>
     <main>
         <section class="contenedor" id="servicio"><!--Seccion del main que usamos para mostrar nuestros servicios-->
@@ -34,11 +38,13 @@
                 <div class="checklist-servicio">
                     <div class="service">
                         <h3 class="n-service"><span class="number">1</span>Experiencia Unica</h3>
-                        <p> El perosnal siempre estara dispuesto a escuhar y atender tus necesidades, buscando tu satisfaccion no solo con el vehículo, sino que te sientas parte de esta gran familia.</p>
+                        <p> El perosnal siempre estara dispuesto a escuhar y atender tus necesidades, buscando tu
+                            satisfaccion no solo con el vehículo, sino que te sientas parte de esta gran familia.</p>
                     </div>
                     <div class="service">
                         <h3 class="n-service"><span class="number">2</span>Services</h3>
-                        <p>Nos encargamos de los chequeos rutinarios del vehículo dejandolo en las manos de los mejores mecanicos especializados en nuestras marcas principales.</p>
+                        <p>Nos encargamos de los chequeos rutinarios del vehículo dejandolo en las manos de los mejores
+                            mecanicos especializados en nuestras marcas principales.</p>
                     </div>
                     <div class="service">
                         <h3 class="n-service"><span class="number">3</span>Plan Renovar</h3>
@@ -47,60 +53,62 @@
                 </div>
             </div>
         </section>
-        <section class="gallery" id="galeria"><!--Seccion del main que usamos para mostrar nuestra galeria con las principales ofertas-->
+        <section class="gallery" id="galeria">
+            <!--Seccion del main que usamos para mostrar nuestra galeria con las principales ofertas-->
             <div class="contenedor">
                 <h2 class="subtitulo">Ultimos Ingresos</h2>
                 <div class="contenedor-galeria">
                         <img src="img/MotoBMW.jpeg" alt="" class="img-galeria1">
                  </div>
-                 <div class="pie" onclick="redireccionar('https://moto.mercadolibre.com.ar/MLA-1528037852-bmw-s1000rr-_JM#position=1&search_layout=grid&type=item&tracking_id=040fc3ec-4646-4147-9aac-430143fe0f8atps://www.google.com/search?q=MOTO+M1000+BMW&sca_esv=578828967&tbm=isch&sxsrf=AM9HkKkSqYlV1idJ5DTD848AChifGhzi6A:1698934062886&source=lnms&sa=X&ved=2ahUKEwipl8LKvqWCAxVFrZUCHXKtC-YQ_AUoAXoECAIQAw&biw=1366&bih=621&https://moto.mercadolibre.com.ar/MLA-1528037852-bmw-s1000rr-_JM#position=1&search_layout=grid&type=item&tracking_id=040fc3ec-4646-4147-9aac-430143fe0f8a=1')">
+                 <div class="pie" onclick="redireccionar('BmwMoto.html')">
                     <p>BMW M1000</p>
-                 </div>
+                </div>
                  <div class="contenedor-galeria">
                     <img src="img/BMWX6.jpg" alt="" class="img-galeria1">
                 </div>
-                <div class="pie" onclick="redireccionar('https://auto.mercadolibre.com.ar/MLA-1535107596-bmw-x6-44-xdrive-50i-m-package-449cv-_JM#position=4&search_layout=grid&type=item&tracking_id=4a87b46f-bd41-4788-ba5e-6b8d575e1493')">
-                   <p>BMW X6</p>
+                <div class="pie" onclick="redireccionar('BmwX6.html')">
+                    <p>BMW X6</p>
                 </div>
                 <div class="contenedor-galeria">
                     <img src="img/FerrariPortofino.jpg" alt="" class="img-galeria">
                 </div>
-                <div class="pie" onclick="redireccionar('https://auto.mercadolibre.com.ar/MLA-1545918078-ferrari-portofino-malek-fara-_JM#position=4&search_layout=grid&type=item&tracking_id=974d9029-a363-4134-acb5-170f9a12f1a5_PARA_LA_SEGUNDA_IMAGEN')">
-                   <p>Ferrari Portofino</p>
+                <div class="pie" onclick="redireccionar('FerrariPortofino.html')">
+                    <p>Ferrari Portofino</p>
                 </div>
-                <div class="contenedor-galeria">   
-                    <img src="img//FerrariCalifornia.jpg" alt="" class="img-galeria">  
+                <div class="contenedor-galeria">
+                    <img src="img//FerrariCalifornia.jpg" alt="" class="img-galeria">
                 </div>
-                <div class="pie" onclick="redireccionar('https://auto.mercadolibre.com.ar/MLA-1543124014-ferrari-california-cabriolet-_JM#position=1&search_layout=grid&type=item&tracking_id=f30bc3e1-0414-4851-8078-661d153e66bdTINO_PARA_LA_SEGUNDA_IMAGEN')">
-                   <p>Ferrari California</p>
+                <div class="pie" onclick="redireccionar('FerrariCalifornia.html')">
+                    <p>Ferrari California</p>
                 </div>
-                <div class="contenedor-galeria">            
-                    <img src="img/AmgGT.jpg" alt="" class="img-galeria">    
+                <div class="contenedor-galeria">
+                    <img src="img/AmgGT.jpg" alt="" class="img-galeria">
                 </div>
-                <div class="pie" onclick="redireccionar('https://auto.mercadolibre.com.ar/MLA-1387157053-mercedes-benz-gtr-v8biturbo-amg-porsche-ferrari-r8-maserati-_JM#position=8&search_layout=grid&type=item&tracking_id=a0db8c9a-d2df-446e-92b4-d9d1117a2c7cURL_DESTINO_PARA_LA_SEGUNDA_IMAGEN')">
-                   <p>Mercedes AMG GT</p>
+                <div class="pie" onclick="redireccionar('Mercedes.html')">
+                    <p>Mercedes AMG GT</p>
                 </div>
-                <div class="contenedor-galeria">  
-                    <img src="img/GwagonBlanca.jpg" alt="" class="img-galeria">    
+                <div class="contenedor-galeria">
+                    <img src="img/GwagonBlanca.jpg" alt="" class="img-galeria">
                 </div>
-                <div class="pie" onclick="redireccionar('https://auto.mercadolibre.com.ar/MLA-1393601015-mercedes-benz-clase-g-g500-_JM#position=2&search_layout=grid&type=item&tracking_id=29a4ec5e-db26-45c2-b432-79e0c7df91ed')">
+                <div class="pie" onclick="redireccionar('g-wagon.html')">
                     <p>G-Wagon</p>
                 </div>
             </div>
         </section>
-     <section class="imagen-light">
+        <section class="imagen-light">
             <img src="img/close.svg" alt="" class="close">
             <img src="img/clio.jpg" alt="" class="agregar-imagen">
         </section>
-        <section class="contenedor" id="expertos"><!--Seccion del main que usamos para mostrar nuestra principales marcas-->
+        <section class="contenedor" id="expertos">
+            <!--Seccion del main que usamos para mostrar nuestra principales marcas-->
             <h2 class="subtitulo">Especializados en:</h2>
             <section class="experts">
                 <div class="cont-experts">
-                    <img src="img/LogoBMW.jpg" alt=""class="imgLogos">
+                    <img src="img/LogoBMW.jpg" alt="" class="imgLogos">
                     <h3 class="n-experts">BMW</h3>
                 </div>
                 <div class="cont-experts">
-                    <img src="img/LogoMercedes.jpg" alt=""class="imgLogos">
+                    <img src="img/LogoMercedes.jpg" alt="" class="imgLogos">
                     <h3 class="n-experts">Mercedes</h3>
                 </div>
                 <div class="cont-experts">
@@ -123,10 +131,10 @@
                     <i class='bx bxl-twitter'></i>
                 </a>
                 <a href="FACE.html" class="social-media-icon" target="_blank">
-                    <i class='bx bxl-facebook-circle' ></i>
+                    <i class='bx bxl-facebook-circle'></i>
                 </a>
                 <a href="INSTA.html" class="social-media-icon" target="_blank">
-                    <i class='bx bxl-instagram' ></i> 
+                    <i class='bx bxl-instagram'></i>
                 </a>
             </div>
         </div>
@@ -134,4 +142,5 @@
     <script src="JS/menu.js"></script>
     <script src="JS/lightbox.js"></script>
 </body>
+
 </html>
