@@ -253,6 +253,7 @@ div.galeria-ofertas{
 div.galeria-ofertas img{
     width: 100%;
     height: auto;
+    margin-top: 20px;
 
 }
 
@@ -262,6 +263,7 @@ div.galeria-ofertas:hover{
 }
 
 div.pie-ofertas{
+
     text-align: center;
     padding: 10px;
 }
