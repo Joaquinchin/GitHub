@@ -241,6 +241,30 @@ div.pie{
     width: 100%;
     font-weight: 400;
 }
+/*Galeria ofertas*/
+div.galeria-ofertas{
+    margin: 10px 20px;
+    box-shadow: o 4px 8px 0 #543937, 0 6px 20px 0 rgba(0,0,0,0.19);
+    float: left;
+    width: 350px;
+
+}
+
+div.galeria-ofertas img{
+    width: 100%;
+    height: auto;
+
+}
+
+div.galeria-ofertas:hover{
+    border: 1px solid #f99185;
+    transform: rotate(-3deg);
+}
+
+div.pie-ofertas{
+    text-align: center;
+    padding: 10px;
+}
 
 /*Footer*/
 
