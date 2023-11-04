@@ -64,7 +64,7 @@
             }
 
             if (Nombre == true && Mail == true && Telefono == true && coment == true && apellido == true) {
-                alert("Datos Enviados")
+                alert(Nombre+" ya enviamos tus datos");
             }
         }
     </script>
@@ -88,11 +88,32 @@
             <label id="Telefono" class="Info">TELEFONO*</label>
             <input type="text" id="Number" class="decotx" placeholder="Ejemplo:  + 54 9 11 6251-6969">
 
-            <label id="coment" class="Info">COMENTARIO*</label>
+            <label id="coment" class="Info">COMENTARIO</label>
             <input type="text" id="Comment" class="decotx" placeholder="¡Comente lo que quiera!">
 
-            <input id="BotonE" type="button" value="Enviar" onclick="Check()" class="Enviado">
-    </div>
+            <button id="BotonE" type="button" value="Enviar" onclick="Check()" class="Enviado">Enviar</button>
+        </div>
+        <footer id="footer"><!--Seccion del footer que usamos para que se puedan contactar con nosotros-->
+            <div class="contenedor footer-content">
+                <div class="contact-us">
+                    <h2 class="brand">TotonCars</h2>
+                    <p>Expertos en el auto de tus sueños</p>
+                    <p>TELEFONO: +31 09122018 </p>
+                    <P>Direccion: Santiago Bernabeu 31</P>
+                </div>
+                <div class="social-media"><!--Mostramos los simbolitos de nuestras redes sociales-->
+                    <a href="TW.HTML" class="social-media-icon" target="_blank">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                    <a href="FACE.html" class="social-media-icon" target="_blank">
+                        <i class='bx bxl-facebook-circle'></i>
+                    </a>
+                    <a href="INSTA.html" class="social-media-icon" target="_blank">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
 </body>
 
 </html>
