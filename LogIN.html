@@ -1,17 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
     <link rel="stylesheet" href="CSS/Principal.css">
+    <script>
+        function Check() {
+            var Nombre = false;
+            var Mail = false;
+            var Telefono = false;
+            var coment = false;
+            var apellido = false;
+            if (document.getElementById("Name").value == "") {
+                document.getElementById("Nombre").setAttribute("style", "color: red;");
+                Nombre = false;
+            }
+
+            else {
+                document.getElementById("Nombre").removeAttribute("style");
+                Nombre = true;
+            }
+            if (document.getElementById("SurName").value == "") {
+                document.getElementById("apellido").setAttribute("style", "color: red;");
+                apellido = false;
+            }
+
+            else {
+                document.getElementById("Apellido").removeAttribute("style");
+                apellido = true;
+            }
+            if (document.getElementById("MailDos").value == "") {
+                document.getElementById("Mail").setAttribute("style", "color: red;");
+                Mail = false;
+            }
+
+            else {
+                document.getElementById("Mail").removeAttribute("style");
+                Mail = true;
+            }
+
+
+            if (document.getElementById("Number").value == "") {
+                document.getElementById("Telefono").setAttribute("style", "color: red");
+                Telefono = false
+            }
+
+            else {
+                document.getElementById("Telefono").removeAttribute("style")
+                Telefono = true;
+            }
+
+
+            if (document.getElementById("comment").value == "") {
+                document.getElementById("coment").setAttribute("style", "color: red");
+                coment = false;
+            }
+
+            else {
+                document.getElementById("coment").removeAttribute("style")
+                coment = true;
+            }
+
+            if (Nombre == true && Mail == true && Telefono == true && coment == true && apellido == true) {
+                alert("Datos Enviados")
+            }
+        }
+    </script>
 </head>
+
 <body>
-<div class="img-LogINfondo">
-    <div class="headLogIn">
-        <h1 class="tituloLogIn">Bienvenido!</h1><!--Titulo Principal-->
-        <p class="copy">Crea tu cuenta</p><!--Breve descripcion que tenemos que cambiar-->
+    <div class="img-LogINfondo">
+        <div class="headLogIn">
+            <h1 class="tituloLogIn">Bienvenido!</h1><!--Titulo Principal-->
+            <p class="copy">Crea tu cuenta</p><!--Breve descripcion que tenemos que cambiar-->
+
+            <label id="Nombre" class="Info">NOMBRE</label>
+            <input type="text" id="Name" class="decotx" placeholder="Ejemplo: Guillermo">
+
+            <label id="Apellido" class="Info">APELLIDO</label>
+            <input type="text" id="SurName" class="decotx" placeholder="Ejemplo: Diaz">
+
+            <label id="Mail" class="Info">MAIL</label>
+            <input type="text" id="MailDos" class="decotx" placeholder="Ejemplo: unejemplo@gmail.com">
+
+            <label id="Telefono" class="Info">TELEFONO*</label>
+            <input type="text" id="Number" class="decotx" placeholder="Ejemplo:  + 54 9 11 6251-6969">
+
+            <label id="coment" class="Info">COMENTARIO*</label>
+            <input type="text" id="Comment" class="decotx" placeholder="¡Comente lo que quiera!">
+
+            <input id="BotonE" type="button" value="Enviar" onclick="Check()" class="Enviado">
     </div>
-</div>  
 </body>
+
 </html>

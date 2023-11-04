@@ -4,148 +4,161 @@
     box-sizing: border-box;
 }
 
-:root{
-    scroll-behavior: smooth;/*hacemos que le de un afecto como de deslizar cuando se produce el scroll, se nota mas en las cosas automaticas*/
+:root {
+    scroll-behavior: smooth;
+    /*hacemos que le de un afecto como de deslizar cuando se produce el scroll, se nota mas en las cosas automaticas*/
 }
 
-body
-{
-    font-family: 'Open Sans', sans-serif;/*Fuentes*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    /*Fuentes*/
 
 }
-.contenedor{
-    width:90%;
+
+.contenedor {
+    width: 90%;
     max-width: 1200px;
     overflow: hidden;
     margin: auto;
-    padding: 60px 0;/*Para que los elementos esten espaciados*/
+    padding: 60px 0;
+    /*Para que los elementos esten espaciados*/
 }
 
-header{
-    height: 100vh;/*QUE OCUPE EL 100%*/
-    background-image: linear-gradient(to right, rgba(255, 236, 210, 0.35) 0%, #fcb69f8b 100%), url(../img/MuchosAutos.jpg);/*le ponemos la imagen del fondo y agregamos un color con transparencia para que quede mas lindo*/
+header {
+    height: 100vh;
+    /*QUE OCUPE EL 100%*/
+    background-image: linear-gradient(to right, rgba(255, 236, 210, 0.35) 0%, #fcb69f8b 100%), url(../img/MuchosAutos.jpg);
+    /*le ponemos la imagen del fondo y agregamos un color con transparencia para que quede mas lindo*/
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
 
-.head{ /*Modificamos las cosas con clase head*/
+.head {
+    /*Modificamos las cosas con clase head*/
     text-align: center;
-    padding: 0px;/*usamos padding de 0 porque el head es clase contenedor y contenedor tiene padding de 60*/
+    padding: 0px;
+    /*usamos padding de 0 porque el head es clase contenedor y contenedor tiene padding de 60*/
     height: 100%;
     display: flex;
-    justify-content: center;/*hacemos que las cosas queden alineadas en el centro vertical*/
-    align-items: center;/*hacemos que las cosas queden alineadas en el centro horizontal*/
+    justify-content: center;
+    /*hacemos que las cosas queden alineadas en el centro vertical*/
+    align-items: center;
+    /*hacemos que las cosas queden alineadas en el centro horizontal*/
     flex-direction: column;
     color: rgb(34, 32, 31);
 }
 
-.IconoMenu
-{  
-    position: fixed;/*que se quede fijo*/
+.IconoMenu {
+    position: fixed;
+    /*que se quede fijo*/
     top: 30px;
     right: 30px;
     background: aliceblue;
     width: 40px;
     height: 40px;
-    cursor: pointer;/*que aparezca la manito*/
+    cursor: pointer;
+    /*que aparezca la manito*/
     border-radius: 10px;
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
 
-.menu-navegacion
-{
+.menu-navegacion {
     position: fixed;
     top: 0;
     right: 0;
-    width: 30vw; /*30% del ancho de la pagina*/
+    width: 30vw;
+    /*30% del ancho de la pagina*/
     height: 100%;
     background-image: linear-gradient(135deg, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;/*hace que quede repartido todo en vertical con el mismo espacio entre cada uno de los titulos*/
+    justify-content: space-evenly;
+    /*hace que quede repartido todo en vertical con el mismo espacio entre cada uno de los titulos*/
     align-items: center;
     transform: translate(110%);
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
 
-.spread{
+.spread {
     transform: translate(0);
 }
 
-.menu-navegacion a{
+.menu-navegacion a {
     color: #fff;
     text-decoration: none;
 }
 
-.titulo{
+.titulo {
     font-size: 60px;
     margin-bottom: 15px;
 }
 
-.copy{
+.copy {
     font-size: 25px;
 }
 
 /*Parte de servicios*/
-.subtitulo{
+.subtitulo {
     text-align: center;
     font-weight: 300;
     color: rgb(167, 123, 66);
     margin-bottom: 40px;
-    font-size: 40px; 
+    font-size: 40px;
 }
 
-.contenedor-servicio{
+.contenedor-servicio {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;/*cuando algo no entra se va para abajo*/
+    flex-wrap: wrap;
+    /*cuando algo no entra se va para abajo*/
 }
 
-.contenedor-servicio img{
+.contenedor-servicio img {
     width: 40%;
 }
 
-.checklist-servicio{
+.checklist-servicio {
     width: 45%;
 }
 
-.service{
+.service {
     margin-bottom: 20px;
 }
 
-.n-service{
+.n-service {
     margin-bottom: 7px;
     color: rgb(167, 123, 66);
 }
 
-.number{
-    display: inline-block;/*podemos darle un width y un height*/
+.number {
+    display: inline-block;
+    /*podemos darle un width y un height*/
     background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
     width: 30px;
     height: 30px;
     color: #fff;
     text-align: center;
-    border-radius: 50%;/*se hace que el color que rodea se hace redondo*/
+    border-radius: 50%;
+    /*se hace que el color que rodea se hace redondo*/
     font-weight: 500;
     margin-right: 7px;
 }
 
-.gallery
-{
+.gallery {
     background: #ffecd2;
 }
 
-.contenedor-galeria{
+.contenedor-galeria {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-   
+
 }
 
-.img-galeria{
+.img-galeria {
     width: 35%;
     height: 500px;
     display: block;
@@ -153,12 +166,8 @@ header{
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
     cursor: pointer;
 }
-/* width: 110%;
-    height: 350px;
-    display: block;
-    margin: auto;*/
 
-.img-galeria1{
+.img-galeria1 {
     width: 35%;
     height: 450px;
     display: block;
@@ -167,19 +176,20 @@ header{
     cursor: pointer;
 }
 
-div.pie{
+div.pie {
     text-align: center;
     padding: 10px;
     margin-bottom: 10px;
     cursor: pointer;
 }
 
-.imagen-light{/*Imagen de la galeria se agranda cuando apretas ahi*/
+.imagen-light {
+    /*Imagen de la galeria se agranda cuando apretas ahi*/
     position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0,0,0,.6);
+    background: rgba(0, 0, 0, .6);
     width: 100%;
     height: 100%;
     top: 0;
@@ -188,11 +198,11 @@ div.pie{
     transition: transform .2s ease-in-out;
 }
 
-.show{
+.show {
     transform: translate(0);
 }
 
-.agregar-imagen{
+.agregar-imagen {
     object-fit: cover;
     width: 600px;
     height: 600px;
@@ -201,7 +211,8 @@ div.pie{
     transition: transform .3s .2s;
 }
 
-.close{/*Simbolo de la cruz para cerrar cuando haya apretado una imagen de nuestra gelria*/
+.close {
+    /*Simbolo de la cruz para cerrar cuando haya apretado una imagen de nuestra gelria*/
     position: absolute;
     top: 15px;
     right: 15px;
@@ -210,58 +221,61 @@ div.pie{
 
 }
 
-.showImage{
+.showImage {
     transform: scale(1);
 }
 
-.experts{
+.experts {
     display: flex;
     justify-content: space-between;
-    align-items:first baseline;
+    align-items: first baseline;
     flex-wrap: wrap;
 }
 
-.cont-experts{
+.cont-experts {
     width: 30%;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.imgLogos{/*IMAGENE DE LOS LOGOS DE LAS MARCAS*/
+.imgLogos {
+    /*IMAGENE DE LOS LOGOS DE LAS MARCAS*/
     width: 110%;
     height: 350px;
     display: block;
     margin: auto;
 }
 
-.n-experts{/*Nombres de las marcas abajo de las fotos de sus logos*/
+.n-experts {
+    /*Nombres de las marcas abajo de las fotos de sus logos*/
     display: inline-block;
     margin-top: 20px;
     width: 100%;
     font-weight: 400;
 }
+
 /*Galeria ofertas*/
-div.galeria-ofertas{
+div.galeria-ofertas {
     margin: 10px 20px;
-    box-shadow: o 4px 8px 0 #543937, 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: o 4px 8px 0 #543937, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     float: left;
     width: 350px;
 
 }
 
-div.galeria-ofertas img{
+div.galeria-ofertas img {
     width: 100%;
     height: auto;
     margin-top: 20px;
 
 }
 
-div.galeria-ofertas:hover{
+div.galeria-ofertas:hover {
     border: 1px solid #f99185;
     transform: rotate(-3deg);
 }
 
-div.pie-ofertas{
+div.pie-ofertas {
 
     text-align: center;
     padding: 10px;
@@ -269,41 +283,46 @@ div.pie-ofertas{
 
 /*Footer*/
 
-footer{
+footer {
     background: #6a4441;
     padding-bottom: 0.1px;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
-    justify-content: space-between;/*Para que las cosas se pongan al lado de la otra pero en las esquinas*/
-    align-items: center;/*centrados verticalmente*/
+    justify-content: space-between;
+    /*Para que las cosas se pongan al lado de la otra pero en las esquinas*/
+    align-items: center;
+    /*centrados verticalmente*/
     flex-wrap: wrap;
     padding-top: 60px;
     padding-bottom: 40px;
 }
 
-.contact-us{
+.contact-us {
     width: 40%;
-    color:#fff;
+    color: #fff;
 }
 
-.brand{
+.brand {
     font-weight: 500;
     font-size: 40px;
 }
 
-.brand+p{/*esta funcion la usamos para marcar lo siguiente en este caso a brand que es un parrafo*/
+.brand+p {
+    /*esta funcion la usamos para marcar lo siguiente en este caso a brand que es un parrafo*/
     font-weight: 500;
 }
 
-.social-media{
+.social-media {
     width: 150%;
     display: flex;
-    justify-content: flex-end;/*Se pone al final del contenedor*/
+    justify-content: flex-end;
+    /*Se pone al final del contenedor*/
 }
 
-.social-media-icon{/*Ponemos los iconos de nuestras redes*/
+.social-media-icon {
+    /*Ponemos los iconos de nuestras redes*/
     display: inline-block;
     margin-left: 20px;
     width: 60px;
@@ -311,43 +330,53 @@ footer{
     border: 1px solid #fff;
     border-radius: 50%;
     text-align: center;
-    color: #fff; 
+    color: #fff;
 }
 
-.social-media-icon:hover{/*Efectos con el mouse*/
+.social-media-icon:hover {
+    /*Efectos con el mouse*/
     background: #fff;
-    color:#f99185;
+    color: #f99185;
 }
 
-.social-media-icon i{/*Los centramos*/
+.social-media-icon i {
+    /*Los centramos*/
     font-size: 30px;
     line-height: 60px;
 
 }
 
-.img-redesSociales{
+.img-redesSociales {
     width: 100%;
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
-.img-LogINfondo{
-    height: 100vh;/*QUE OCUPE EL 100%*/
+
+.img-LogINfondo {
+    height: 100vh;
+    /*QUE OCUPE EL 100%*/
     width: 100%;
-    background-image: linear-gradient(to right, rgba(255, 236, 210, 0.35) 0%, #fcb69f8b 100%), url(../img/FondoLogIn.jpg);/*le ponemos la imagen del fondo y agregamos un color con transparencia para que quede mas lindo*/
+    background-image: linear-gradient(to right, rgba(255, 236, 210, 0.35) 0%, #fcb69f8b 100%), url(../img/FondoLogIn.jpg);
+    /*le ponemos la imagen del fondo y agregamos un color con transparencia para que quede mas lindo*/
     /*background-repeat: no-repeat;*/
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
-.tituloLogIn{
+
+.tituloLogIn {
     font-size: 60px;
     margin-bottom: 15px;
 }
-.headLogIn{ /*Modificamos las cosas con clase head*/
+
+.headLogIn {
+    /*Modificamos las cosas con clase head*/
     text-align: center;
-    padding: 0;/*usamos padding de 0 porque el head es clase contenedor y contenedor tiene padding de 60*/
+    padding: 0;
+    /*usamos padding de 0 porque el head es clase contenedor y contenedor tiene padding de 60*/
     height: 100%;
     display: flex;
-    align-items: center;/*hacemos que las cosas queden alineadas en el centro horizontal*/
+    align-items: center;
+    /*hacemos que las cosas queden alineadas en el centro horizontal*/
     flex-direction: column;
     color: rgb(34, 32, 31);
 }
@@ -355,57 +384,60 @@ footer{
 
 /*HACEMOS EL RESPONSIVE PARA QUE SE ADAPTE A LOS DISTINTOS DISPOSITIVOS*/
 
-@media  screen and (max-width: 800px) {
-    .menu-navegacion{
+@media screen and (max-width: 800px) {
+    .menu-navegacion {
         width: 50vw;
     }
-    .titulo{
+
+    .titulo {
         font-size: 40px;
 
     }
 
-    .contenedor-servicio img{
+    .contenedor-servicio img {
         width: 80%;
         margin-bottom: 40px;
 
     }
-    .checklist-servicio{
+
+    .checklist-servicio {
         width: 80%;
     }
-    .service{
+
+    .service {
         margin-bottom: 30px;
     }
 
-    .agregar-imagen{
+    .agregar-imagen {
         width: 80%;
     }
 
-    .img-galeria{
+    .img-galeria {
         width: 45%;
     }
 
-    .img-galeria1{
+    .img-galeria1 {
         width: 85%;
     }
 
-    .cont-experts{
+    .cont-experts {
         width: 80%;
     }
 
-    .footer-content{
+    .footer-content {
         justify-content: center;
     }
 
-    .social-media{
+    .social-media {
         width: 80%;
         justify-content: space-evenly;
     }
 
-    .social-media i{
-        margin-left: 0; 
+    .social-media i {
+        margin-left: 0;
     }
 
-    .contact-us{
+    .contact-us {
         text-align: center;
         width: 80%;
         margin-bottom: 40px;
@@ -413,49 +445,159 @@ footer{
     }
 }
 
-@media screen and (max-width: 500px){
-    .menu-navegacion{
+@media screen and (max-width: 500px) {
+    .menu-navegacion {
         width: 65vw;
     }
 
-    .IconoMenu{
+    .IconoMenu {
         top: 20px;
         right: 20px;
     }
 
-    .titulo{
+    .titulo {
         font-size: 30px;
     }
 
-    .subtitulo{
+    .subtitulo {
         font-size: 30px;
     }
 
-    .img-galeria{
+    .img-galeria {
         width: 95%;
     }
 
-    .img-galeria1{
+    .img-galeria1 {
         width: 185%;
     }
-    
-    .agregar-imagen{
+
+    .agregar-imagen {
         width: 90%;
     }
 
-    .social-media{
+    .social-media {
         width: 100%;
         justify-content: space-evenly;
     }
 
-    .social-media-icon{
+    .social-media-icon {
         margin-left: 0;
     }
 
-    .contact-us{
+    .contact-us {
         text-align: center;
         width: 95%;
         margin-bottom: 40px;
     }
-    
+
+}
+
+.info {
+    text-align: center;
+    font-family: 'ranga';
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: transparent;
+    border-color: transparent;
+    grid-column: 2/2;
+}
+
+.decotx {
+    text-align: center;
+    background-color: black;
+    color: white;
+    grid-column: 2/2;
+    border-radius: 6px;
+    width: 50%;
+    height: 40%;
+    font-size: 30px;
+}
+
+#Nombre {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    grid-row: 2/2;
+    margin-top: 2%;
+}
+
+#Name {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    grid-row: 2/2;
+    margin-top: 2%;
+}
+
+#Apellido {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    grid-row: 2/2;
+    margin-top: 2%;
+}
+
+#SurName {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    grid-row: 2/2;
+    margin-top: 2%;
+}
+
+
+
+#Mail {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    grid-row: 2/2;
+    margin-top: 2%;
+}
+
+#MailDos {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    grid-row: 2/2;
+    margin-top: 2%;
+}
+
+#Telefono {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    grid-row: 2/2;
+    margin-top: 2%;
+}
+
+#Number {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    grid-row: 2/2;
+    margin-top: 2%;
+}
+#coment {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    grid-row: 2/2;
+    margin-top: 2%;
+}
+
+#Comment {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    grid-row: 2/2;
+    margin-top: 2%;
+}
+
+#botonE {
+    text-align: center;
+    grid-row: 10/10;
+    margin-top: 3%;
+    width: 50%;
+    height: 50%;
+}
+
+.Enviado {
+    text-align: center;
+    margin-top: 3%;
+    background-color: black;
+    color: wheat;
+    height: 30%;
+    width: 10%;
 }
