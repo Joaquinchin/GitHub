@@ -1,0 +1,182 @@
+.img-LogINfondo{
+    height: 100vh;/*QUE OCUPE EL 100%*/
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(255, 236, 210, 0.35) 0%, #fcb69f8b 100%), url(../img/FondoLogIn.jpg);/*le ponemos la imagen del fondo y agregamos un color con transparencia para que quede mas lindo*/
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.tituloLogIn{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+.headLogIn{ /*Modificamos las cosas con clase head*/
+    text-align: center;
+    padding: 0;/*usamos padding de 0 porque el head es clase contenedor y contenedor tiene padding de 60*/
+    height: 100%;
+    display: flex;
+    align-items: center;/*hacemos que las cosas queden alineadas en el centro horizontal*/
+    flex-direction: column;
+    color: rgb(34, 32, 31);
+}
+.info {
+    text-align: center;
+    font-family: 'ranga';
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: transparent;
+    border-color: transparent; 
+    grid-column: 2/2;
+    flex-direction: column;
+}
+.decotx
+{
+    background-color: black;
+    color: white;
+    grid-column: 2/2;
+    border-radius: 6px;
+    width: 50%;
+    height: 40%;
+    margin-left: 20%;
+    font-size: 30px;
+}
+#Nombre
+{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    grid-row: 2/2;
+    margin-right: 6%;
+    margin-top: 5%;
+    flex-direction: column;
+}
+
+#Name
+{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    grid-row: 2/2;
+    margin-top: 10%;
+    flex-direction: column;
+}
+
+#Apellido
+{
+    grid-row: 3/3;
+    margin-right: 6%;
+    margin-top: 5%;
+}
+
+#inpt2
+{
+    grid-row: 3/3;
+    margin-top: 10%;
+}
+
+#Mail
+{
+    grid-row: 4/4;
+    margin-right: 6%;
+    margin-top: 5%;
+}
+#inpt3
+{
+    grid-row: 4/4;
+    margin-top: 10%;
+}
+
+#Telefono
+{
+    grid-row: 5/5;
+    margin-right: 6%;
+    margin-top: 5%;
+}
+#inpt4
+{
+    grid-row: 5/5;
+    margin-top: 10%;
+}
+
+#Direccion
+{
+    grid-row: 6/6;
+    margin-right: 6%;
+    margin-top: 5%;
+}
+#inpt5
+{
+    grid-row: 6/6;
+    margin-top: 10%;
+}
+
+#FechaNac
+{
+    grid-row: 7/7;
+    margin-right: 6%;
+    margin-top: 5%;
+}
+
+#FdNtxt1
+{
+    grid-row: 7/7;
+    width: 8%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#FdNtxt2
+{
+    grid-row: 7/7;
+    width: 20%;
+    margin-top: 10%;
+    margin-left: 30%;
+    text-align: center;
+}
+#FdNtxt3
+{
+    grid-row: 7/7;
+    width: 20%;
+    margin-top: 10%;
+    margin-left: 52%;
+    text-align: center;
+}
+
+#Pais
+{
+    grid-row: 8/8;
+    margin-right: 7%;
+    margin-top: 5%;
+}
+
+#paislct
+{
+    grid-row: 8/8;
+    margin-top: 10%;
+}
+
+#coment
+{
+    grid-row: 9/9;
+    margin-top: 3%;
+    margin-right: 8%;
+}
+
+#inpt6
+{
+    grid-row: 9/9;
+    margin-top: 8%;
+    margin-right: 10%;
+    width:50%;
+    height: 80%;
+    text-align: center;
+}
+
+#botonE
+{
+    grid-row: 10/10;
+    margin-top: 10%;
+    width: 30%;
+    margin-left: 30%;
+}
