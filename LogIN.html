@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <!--Google fonts-->
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'><!--boxicons-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
@@ -13,61 +15,54 @@
             var Telefono = false;
             var coment = false;
             var apellido = false;
+
             if (document.getElementById("Name").value == "") {
                 document.getElementById("Nombre").setAttribute("style", "color: red;");
-                Nombre = false;
-            }
-
-            else {
+            } else {
                 document.getElementById("Nombre").removeAttribute("style");
                 Nombre = true;
             }
-            if (document.getElementById("SurName").value == "") {
-                document.getElementById("apellido").setAttribute("style", "color: red;");
-                apellido = false;
-            }
 
-            else {
+            if (document.getElementById("SurName").value == "") {
+                document.getElementById("Apellido").setAttribute("style", "color: red;");
+            } else {
                 document.getElementById("Apellido").removeAttribute("style");
                 apellido = true;
             }
+
             if (document.getElementById("MailDos").value == "") {
                 document.getElementById("Mail").setAttribute("style", "color: red;");
-                Mail = false;
-            }
-
-            else {
+            } else {
                 document.getElementById("Mail").removeAttribute("style");
                 Mail = true;
             }
 
-
             if (document.getElementById("Number").value == "") {
                 document.getElementById("Telefono").setAttribute("style", "color: red");
-                Telefono = false
-            }
-
-            else {
-                document.getElementById("Telefono").removeAttribute("style")
+            } else {
+                document.getElementById("Telefono").removeAttribute("style");
                 Telefono = true;
             }
 
-
-            if (document.getElementById("comment").value == "") {
+            if (document.getElementById("Comment").value == "") {
                 document.getElementById("coment").setAttribute("style", "color: red");
-                coment = false;
-            }
-
-            else {
-                document.getElementById("coment").removeAttribute("style")
+            } else {
+                document.getElementById("coment").removeAttribute("style");
                 coment = true;
             }
 
-            if (Nombre == true && Mail == true && Telefono == true && coment == true && apellido == true) {
-                alert(Nombre+" ya enviamos tus datos");
+            if (Nombre && Mail && Telefono && coment && apellido) {
+                var nombre = document.getElementById("Name").value;
+                alert(nombre + " ya esta iniciada tu sesion");
+                alert("Ya puede cerrar esta pagina");
+                window.location.reload();
+            }
+            else {
+                alert("DEBE COMPLETAR LOS CAMPOS OBLIGAORIOS");
             }
         }
     </script>
+
 </head>
 
 <body>
@@ -77,16 +72,16 @@
             <p class="copy">Crea tu cuenta</p><!--Breve descripcion que tenemos que cambiar-->
 
             <label id="Nombre" class="Info">NOMBRE</label>
-            <input type="text" id="Name" class="decotx" placeholder="Ejemplo: Guillermo">
+            <input type="text" id="Name" class="decotx" placeholder="Ejemplo: Juan Roman">
 
             <label id="Apellido" class="Info">APELLIDO</label>
-            <input type="text" id="SurName" class="decotx" placeholder="Ejemplo: Diaz">
+            <input type="text" id="SurName" class="decotx" placeholder="Ejemplo: Riquelme">
 
             <label id="Mail" class="Info">MAIL</label>
-            <input type="text" id="MailDos" class="decotx" placeholder="Ejemplo: unejemplo@gmail.com">
+            <input type="text" id="MailDos" class="decotx" placeholder="Ejemplo: BocaYoTeAmo@gmail.com">
 
-            <label id="Telefono" class="Info">TELEFONO*</label>
-            <input type="text" id="Number" class="decotx" placeholder="Ejemplo:  + 54 9 11 6251-6969">
+            <label id="Telefono" class="Info">TELEFONO</label>
+            <input type="text" id="Number" class="decotx" placeholder="Ejemplo:  + 54 9 11 2606-6739">
 
             <label id="coment" class="Info">COMENTARIO</label>
             <input type="text" id="Comment" class="decotx" placeholder="¡Comente lo que quiera!">
@@ -114,6 +109,7 @@
                 </div>
             </div>
         </footer>
+        <script src="https://kit.fontawesome.com/977da032b1.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
